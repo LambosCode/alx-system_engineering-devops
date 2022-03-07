@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f -iregex ".*.gif" | rev | cut -b 5- | rev | cut -b 3-
+find -type f -iregex ".*.gif" | LC_ALL=C sort -f | rev | cut -b 5- | rev | cut -b 3-
